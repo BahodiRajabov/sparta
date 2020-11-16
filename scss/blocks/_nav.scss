@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 281px;
+  padding-left: 0;
+  list-style-type: none;
+}
+.nav__link {
+  text-decoration: none;
+  display: block;
+  letter-spacing: 12.6px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav__contact {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+}
