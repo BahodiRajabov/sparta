@@ -13,8 +13,12 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" href="index.html">
-          <img class="logo__img" src="./img/logo-sparta.png" alt="sparta logo" width="247" height="89"
-            srcset="./img/logo-sparta.png 1x, ./img/logo-sparta@2x.png 2x">
+          <picture>
+            <source media="(max-width:550px)" srcset="./img/logo-mobile.png 1x, img/logo-mobile@2x.png 2x">
+            <source media="(max-width:750px)" srcset="./img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
+            <img class="logo__img header__logo-img" src="./img/logo-sparta.png" alt="sparta logo" width="247"
+              height="89" srcset="./img/logo-sparta.png 1x, ./img/logo-sparta@2x.png 2x">
+          </picture>
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -22,8 +26,8 @@
               <a class="nav__link" href="#">спецкурс</a>
             </li>
           </ul>
-          <a class="nav__contact" href="tel:+79304150252">+7 (930) 415 02 52</a>
         </nav>
+        <a class="nav__contact" href="tel:+79304150252">+7 (930) 415 02 52</a>
       </div>
     </header>
     <section class="intro">
@@ -43,7 +47,7 @@
       </div>
     </section>
   </div>
-  <section class="roadmap">
+  <!-- <section class="roadmap">
     <div class="roadmap__container container">
       <h2 class="section-header section-header--roadmap">Что вас ждёт</h2>
       <ul class="roadmap__list">
@@ -86,7 +90,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
 </body>
 
 </html>
