@@ -1,0 +1,125 @@
+.roadmap {
+  padding-top: 17px;
+  padding-bottom: 123px;
+}
+.roadmap__container {
+  max-width: 1150px;
+}
+.roadmap__list {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../img/start-bg.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 60px) top 0;
+  &::before {
+    content: "Start";
+    display: inline-block;
+    text-transform: capitalize;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 42px;
+    position: absolute;
+    top: 40px;
+    right: 240px;
+    background-image: url("../../img/start.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  &::after {
+    content: "Finish";
+    display: inline-block;
+    text-transform: capitalize;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 42px;
+    position: absolute;
+    bottom: 100px;
+    left: 230px;
+    background-image: url("../../img/start.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+.roadmap__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    width: 360px;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 360px 300px;
+    margin-right: 25px;
+  }
+  &--alpinist::before {
+    background-image: url("../../img/alpinist.png");
+  }
+  &--olov::before {
+    background-image: url("../../img/olov.png");
+  }
+  &--dostlar::before {
+    background-image: url("../../img/dostlar.png");
+  }
+  &--velik::before {
+    background-image: url("../../img/velik.png");
+  }
+  &:nth-child(even) {
+    align-self: flex-end;
+  }
+}
+.roadmap__item-info {
+  max-width: 300px;
+}
+.roadmap__item-title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  color: #4d4d4d;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.roadmap__item-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.roadmap__start {
+}
+.roadmap__finish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  top: 40px;
+  left: 240px;
+  &::after {
+    margin-top: 21px;
+    display: inline-block;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url("../../img/start.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
