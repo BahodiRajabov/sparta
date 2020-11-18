@@ -768,36 +768,4 @@ img {
   font-weight: 400;
   line-height: normal;
 }
-
-.roadmap__finish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: capitalize;
-  color: #ff0000;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  position: absolute;
-  top: 40px;
-  left: 240px;
-}
-
-.roadmap__finish::after {
-  margin-top: 21px;
-  display: inline-block;
-  content: "";
-  width: 21px;
-  height: 21px;
-  background-image: url("../../img/start.svg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
 /*# sourceMappingURL=styles.css.map */
