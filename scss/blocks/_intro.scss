@@ -1,0 +1,60 @@
+.intro {
+  padding-top: 106px;
+  padding-bottom: 200px;
+}
+.intro__header {
+  margin-top: 0;
+  margin-bottom: 26px;
+  color: #ff0000;
+  font-family: "Besom", "Arial", sans-serif;
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 160px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+}
+.intro__desc {
+  margin-top: 0;
+  margin-bottom: 44px;
+  color: #ffffff;
+  font-size: 68px;
+  font-weight: 400;
+  letter-spacing: 3.4px;
+}
+.intro__weeks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 65px;
+}
+.intro__weeks-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 33px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 205px;
+  height: 40px;
+  background-image: url("../img/intro-week.png");
+}
+.intro__weeks-item {
+  padding: 10px;
+  color: #1b1916;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+.intro__weeks-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  max-width: 80px;
+}
+.button {
+}
