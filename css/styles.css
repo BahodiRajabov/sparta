@@ -449,8 +449,15 @@ img {
   text-transform: uppercase;
   background-image: url("../img/btn-bg.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-position: center center;
+}
+
+@media only screen and (max-width: 650px) {
+  .button {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .bg {
