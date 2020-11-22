@@ -681,6 +681,51 @@ img {
   max-width: 80px;
 }
 
+@media only screen and (max-width: 800px) {
+  .intro {
+    padding-top: 70px;
+    padding-bottom: 158px;
+    text-align: center;
+  }
+  .intro__header {
+    font-size: 107px;
+    letter-spacing: 8.94px;
+    margin-bottom: 16px;
+  }
+  .intro__desc {
+    font-size: 40px;
+    letter-spacing: 3.34px;
+    margin-bottom: 33px;
+  }
+  .intro__weeks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 49px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .intro {
+    padding-top: 23px;
+    padding-bottom: 142px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .intro__header {
+    font-size: 92px;
+    margin-bottom: 15px;
+  }
+  .intro__desc {
+    font-size: 38px;
+  }
+  .intro__weeks-list {
+    margin-right: 13px;
+  }
+}
+
 .roadmap {
   padding-top: 17px;
   padding-bottom: 123px;
