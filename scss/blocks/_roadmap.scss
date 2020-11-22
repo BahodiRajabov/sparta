@@ -27,7 +27,7 @@
     padding-bottom: 42px;
     position: absolute;
     top: 40px;
-    right: 240px;
+    right: calc(50% - 320px);
     background-image: url("../../img/start.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -43,14 +43,13 @@
     padding-top: 42px;
     position: absolute;
     bottom: 100px;
-    left: 230px;
+    left: calc(50% - 320px);
     background-image: url("../../img/start.svg");
     background-repeat: no-repeat;
     background-position: center top;
   }
 }
 .roadmap__item {
-  position: relative;
   display: flex;
   align-items: center;
   &::before {
@@ -59,7 +58,7 @@
     height: 300px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 360px 300px;
+    background-size: contain;
     margin-right: 25px;
   }
   &--alpinist::before {
@@ -97,4 +96,60 @@
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+}
+@include responsive(950) {
+  .roadmap__list {
+    background-image: url("../img/start-bg-tablet.png");
+    &::before {
+      right: calc(50% - 220px);
+    }
+    &::after {
+      left: calc(50% - 220px);
+      bottom: 260px;
+    }
+  }
+  .roadmap__item--reverse {
+    flex-direction: row-reverse;
+    &::before {
+      margin-right: 0;
+      margin-left: 25px;
+    }
+  }
+  .roadmap__item--coloumn {
+    flex-direction: column;
+    align-items: flex-end;
+    &::before {
+      margin: 0;
+      margin-bottom: 9px;
+    }
+  }
+}
+@include responsive(650) {
+  .roadmap__list {
+    background-image: none;
+    align-items: center;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .roadmap__item {
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 53px;
+    &::before {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &:nth-child(even) {
+      align-self: stretch;
+    }
+  }
+  .roadmap__item-info {
+    max-width: 100%;
+  }
 }
